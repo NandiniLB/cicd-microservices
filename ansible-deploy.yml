@@ -17,5 +17,5 @@
     #   shell: docker rm -f {{ microservice }}
         
     - name: create a application container
-      shell: docker run -id --name {{ microservice }} -p {{ port }}:{{ port }} --network new-bridge-network hiqode01.jfrog.io/nandini-docker/cicd-app/{{ microservice }}:V-1.0.0-{{ build_number }} 
+      shell: docker run -id --name {{ microservice }} -p {{ port }}:{{ port }} --network new-bridge-network hiqode01.jfrog.io/nandini-docker/cicd-app/{{ microservice }}:V-1.0.1-{{ build_number }} 
  
